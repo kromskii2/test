@@ -9,11 +9,9 @@
   "author": "Твоё имя",
   "license": "MIT",
   "dependencies": {
-    // Здесь твои зависимости, например:
-    // "node-telegram-bot-api": "^0.66.0"
+    "node-telegram-bot-api": "^0.66.0"
   },
   "devDependencies": {
-    // Например если хочешь линтер:
-    // "node-telegram-bot-api": "^0.66.0"
+    "node-telegram-bot-api": "^0.66.0"
   }
 }

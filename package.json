@@ -1,15 +1,19 @@
 {
-  "name": "i",
+  "name": "your-project-name",
   "version": "1.0.0",
-  "description": "",
+  "description": "Описание проекта",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No tests yet\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Твоё имя",
+  "license": "MIT",
   "dependencies": {
-    "node-telegram-bot-api": "^0.66.0"
+    // Здесь твои зависимости, например:
+    // "express": "^4.18.2"
+  },
+  "devDependencies": {
+    // Например если хочешь линтер:
+    // "eslint": "^8.56.0"
   }
 }

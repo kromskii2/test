@@ -1,6 +1,36 @@
-version: 2
-updates:
+- name: Cache
+  version: 2
+    updates:
+  # Обновление npm-зависимостей
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
+      interval: "daily"
+      time: "09:00"
+      timezone: "UTC"
+    commit-message:
+      prefix: "chore(deps)"
+    labels:
+      - "dependencies"
+    reviewers:
+      - "your-github-username"
+    open-pull-requests-limit: 5
+    ignore:
+      - dependency-name: "node-telegram-bot-api"
+        update-types: ["version-update:semver-major"]
+
+  # Обновление GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
       interval: "weekly"
+    commit-message:
+      prefix: "ci"
+    assignees:
+      - "devops-team"
+
+  # Обновление Docker образов
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "monthly"
